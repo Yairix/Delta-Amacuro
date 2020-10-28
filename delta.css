@@ -1,0 +1,264 @@
+html {
+    font-family: "Segoe UI", "Roboto", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+.cover {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+header {
+    width: 100%;
+    height: 120px;
+    top: 0;
+    left: 0;
+    background-color:#180E0C;
+}
+.icon-menu {
+    display: none; 
+}
+.content-header {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 16px;
+}
+nav {
+    width: 50%;
+    max-width: 700px;
+}
+
+nav .list-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+nav .list-menu a {
+    text-decoration: none;
+    color: white;
+}
+.home {
+    padding: 50px 16px;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;   
+}
+.home:hover {
+    background-color: teal;
+    padding: 13px;
+    border-radius: 5px;  
+}
+.ama {
+    color:white;
+    float: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/*--------primera parte--------*/
+section {
+    padding: 80px 80px;
+    display: flex;
+}
+.corte {
+    margin-right: 40px;
+}
+
+.first article p {
+    font-size: 14px;
+}
+h2 {
+    font-size: 20px;
+}
+.um {
+    width: 260px;
+    height: 250px;
+    margin-right: 50px;
+}
+/*--------segunda parte--------*/
+.second {
+    background-color: #180e0b;
+    color: #b4654d;
+}
+.left, .right {
+    flex-basis: 50%;
+}
+.left {
+    display: flex;
+    padding-right: 34px;
+}
+.left article {
+    display: flex;
+    margin-top: 21px;
+}
+.left article img {
+    width: 89px;
+    height: 89px;
+}
+p {
+    line-height: 1.61;
+    font-size: 12px;
+}
+
+.second .left p {
+    margin-left: 13px;
+}
+
+.left div:last-of-type{
+    margin-left: 34px;
+}
+
+.saltomono {
+    height: 240px;
+    width: 100%;
+}
+/*--------tercera parte--------*/
+.thrid {
+    background-color: #080403;
+    color: #b4654d;
+}
+.thrid .t-left a {
+    color: #cf816a;
+}
+.t-left {
+    flex-basis: 75%;
+    padding-right: 89px;
+}
+.t-right {
+    flex-basis: 25%;
+}
+
+.t-right a {
+    text-decoration: underline;
+    color: inherit;
+}
+footer {
+    background-color: #030201;
+    text-align: center;
+    padding: 34px 89px;
+    color: #b4654d;
+}
+footer p {
+    margin: 0;
+}
+.left article p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 865px;
+    width: 100%;
+}
+.nav-container ul {
+    padding-left: 0;
+}
+.nav-container ul li a {
+    font-size: 13px;
+}
+.nav-container img {
+    width: 34px;
+    height: 34px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*Responsive*/
+@media (max-width: 812px) {
+    .menu {
+        display: none;
+    }
+}
+@media (min-width:375px) and (max-width: 812px){
+    header {
+        width: 100%;
+        height: 60px;
+        top: 0;
+        left: 0;
+        background-color:#180E0C;
+    }
+    .content-header {
+        height: 60px;
+        padding: 20px;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    nav .list-menu {
+        flex-direction: column;
+        margin: 0;
+        padding: 70px 0 0 0;
+    }
+    nav .list-menu a {
+        display: block;
+        margin-bottom: 25px;
+    }
+    .icon-menu {
+        display: flex;
+        width: 27px;
+        height: 18px; 
+        margin-top: -30px; 
+    }
+    .ama {
+        font-size: 20px;
+        height: 60px;
+    }
+    .list-menu {
+        display: none;
+
+    }
+    .cover{
+        height: 130px;
+        width: 100%;
+    }
+    section {
+        padding: 36px;
+    }
+    .first article {
+        width: 46%;
+        margin-right: 12px;
+    }
+    .corte {
+        margin-right: 0;
+    }
+    .um {
+        width: 146px;
+        height: 128px;
+    }
+    .first article h2 {
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .first article p {
+        font-size: 10px;
+        line-height: 16.1px;
+    }
+    section, .left {
+        flex-wrap: wrap;
+    }
+    .left, .right,
+    .t-left, .t-right {
+        flex-basis: 100%;
+    }
+    .left div:last-of-type {
+        margin-left: 0;
+    }
+    .t-left {
+        padding-right: 0;
+    }
+    .due {
+        width: 69px;
+        height: 69px;
+    }
+
+}
+/*-----FIN-----*/
